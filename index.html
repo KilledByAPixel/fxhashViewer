@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Moved — fxhash archive</title>
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href="https://killedbyapixel.github.io/fxhashArchive/" />
+    <!--
+      This repository exists only to keep old links alive.
+
+      The archive was renamed fxhashViewer -> fxhashArchive. GitHub redirects a
+      renamed repository everywhere except its Pages site, so this address would
+      otherwise have started 404ing on every link anyone had ever shared.
+
+      The hash is carried across, so a deep link still lands where it pointed:
+        /fxhashViewer/#/token/some-slug  ->  /fxhashArchive/#/token/some-slug
+      The hash never reaches the server, so only the browser can do this — which
+      is exactly why it has to be a page and not a server rule.
+    -->
+    <script>
+      location.replace('https://killedbyapixel.github.io/fxhashArchive/' + (location.hash || ''))
+    </script>
+    <meta http-equiv="refresh" content="1; url=https://killedbyapixel.github.io/fxhashArchive/" />
+    <style>
+      body { font: 16px/1.6 system-ui, sans-serif; margin: 4rem auto; max-width: 34rem; padding: 0 1rem; }
+    </style>
+  </head>
+  <body>
+    <h1>fxhash archive has moved</h1>
+    <p>
+      This is now at
+      <a href="https://killedbyapixel.github.io/fxhashArchive/">killedbyapixel.github.io/fxhashArchive</a>.
+      You should be sent there automatically.
+    </p>
+  </body>
+</html>

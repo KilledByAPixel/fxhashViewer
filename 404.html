@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Moved — fxhash archive</title>
+    <meta name="robots" content="noindex" />
+    <!--
+      Pages serves this for any path under the old repository that has no file,
+      so /fxhashViewer/anything follows the move too, not just the front door.
+      The path after the repository name is carried across along with the hash.
+    -->
+    <script>
+      (function () {
+        var from = '/fxhashViewer/'
+        var to = 'https://killedbyapixel.github.io/fxhashArchive/'
+        var rest = location.pathname.indexOf(from) === 0 ? location.pathname.slice(from.length) : ''
+        location.replace(to + rest + location.search + location.hash)
+      })()
+    </script>
+    <meta http-equiv="refresh" content="1; url=https://killedbyapixel.github.io/fxhashArchive/" />
+    <style>
+      body { font: 16px/1.6 system-ui, sans-serif; margin: 4rem auto; max-width: 34rem; padding: 0 1rem; }
+    </style>
+  </head>
+  <body>
+    <h1>fxhash archive has moved</h1>
+    <p>
+      This is now at
+      <a href="https://killedbyapixel.github.io/fxhashArchive/">killedbyapixel.github.io/fxhashArchive</a>.
+    </p>
+  </body>
+</html>
